@@ -5,6 +5,7 @@ import App_container from '@/components/app_container.vue'
 import App_link from '@/components/app_link.vue'
 import App_stack_card from '@/components/app_stack_card.vue'
 import homeFinderImage from '@/assets/home_page.png'
+import clotImage from '@/assets/clot.png'
 </script>
 
 <template>
@@ -98,9 +99,10 @@ import homeFinderImage from '@/assets/home_page.png'
           backend="Firebase"
           projectName="CLOT"
           overview="Clot is a mobile e-commerce application designed to simplify online clothing shopping with a clean interface and fast performance"
-          image="image"
+          :image="clotImage"
           alt="CLOT e-commerce app interface showcasing a clean design and fast performance for online clothing shopping"
           link="https://github.com/Bewizi/clot"
+          projectLink="https://drive.google.com/file/d/1JB3IpWT9JDanxHnGXfcytpRffYvdWL5i/view?usp=drive_link"
         />
       </div>
     </App_container>
