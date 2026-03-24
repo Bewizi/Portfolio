@@ -4,6 +4,7 @@ import App_card from '@/components/app_card.vue'
 import App_container from '@/components/app_container.vue'
 import App_link from '@/components/app_link.vue'
 import App_stack_card from '@/components/app_stack_card.vue'
+import homeFinderImage from '@/assets/home_page.png'
 </script>
 
 <template>
@@ -11,19 +12,21 @@ import App_stack_card from '@/components/app_stack_card.vue'
     <!-- hero section -->
     <App_container>
       <h1 class="text-6xl font-bold mb-6 uppercase">
-        <span class="text-text-primary"> Building fast, </span>
+        <span class="text-text-primary"> I build mobile apps that help </span>
 
-        <span class="text-primary-accent"> scalable mobile apps with Flutter. </span>
+        <span class="text-primary-accent"> startups launch fast and scale confidently. </span>
       </h1>
       <p class="text-text-secondary text-2xl mb-6">
-        I’m Toluwalase — a Flutter developer specializing in Firebase and Supabase. I create
-        responsive, high-performance mobile applications with clean UI and reliable backend systems.
+        I’m Toluwalase — a Flutter developer specializing in Firebase and Supabase. I build mobile
+        apps that are reliable, easy to use, and ready for real users from day one.
       </p>
       <!-- two buttons will wrap inside div and use flex create a custom button -->
       <div class="flex gap-4">
-        <App_botton :is-bg-color="true"> View My Work </App_botton>
+        <App_botton :is-bg-color="true">
+          <a href="#work"> View My Projects </a>
+        </App_botton>
         <App_link to="/contact">
-          <App_botton :is-border="true"> Contact Me </App_botton>
+          <App_botton :is-border="true"> Start a Project </App_botton>
         </App_link>
       </div>
     </App_container>
@@ -31,20 +34,16 @@ import App_stack_card from '@/components/app_stack_card.vue'
     <!-- tech stack section -->
     <App_container class="mt-20">
       <h2 class="text-4xl font-bold text-text-primary mb-6">The Technical Stack</h2>
-      <p class="text-text-secondary text-lg mb-4">
-        I work primarily with <strong class="text-primary-accent"> Flutter </strong> for frontend
-        development, leveraging its powerful UI toolkit to create beautiful and responsive mobile
-        applications. For backend services, I utilize
-        <strong class="text-primary-accent"> Firebase </strong>
-        and
-
-        <strong class="text-primary-accent"> Supabase </strong>
-        to handle authentication, real-time data, and cloud storage efficiently.
-      </p>
       <p class="text-text-secondary text-lg">
-        My expertise in these technologies allows me to build scalable, high-performance apps that
-        deliver real value to users.
+        I use <strong class="text-primary-accent"> Flutter </strong>,
+        <strong class="text-primary-accent"> Firebase </strong> and
+        <strong class="text-primary-accent"> Supabase </strong> to build apps that:
       </p>
+      <ul class="list-disc list-inside mt-4 text-text-secondary">
+        <li>Handle real-time data smoothly</li>
+        <li>Scale as your users grow</li>
+        <li>Stay reliable under load</li>
+      </ul>
 
       <!-- tech stack cards will wrap inside div and use grid to create a custom card -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
@@ -88,8 +87,11 @@ import App_stack_card from '@/components/app_stack_card.vue'
           frontend="Flutter"
           backend="Supabase"
           projectName="HomeFinder"
-          overview="HomeFinder helps users find homes across Nigeria quickly and efficiently."
-          image="image"
+          overview="Built a location-based app that helps users find available homes across Nigeria with real-time data and smart filtering."
+          :image="homeFinderImage"
+          alt="HomeFinder app interface showcasing real-time home listings and smart filtering features"
+          link="https://github.com/Bewizi/homefinder"
+          projectLink="https://drive.google.com/file/d/1jnWx1W8zfjTHLaEAMovL2NmQo50nDUIq/view?usp=drive_link"
         />
         <App_card
           frontend="Flutter"
@@ -97,6 +99,8 @@ import App_stack_card from '@/components/app_stack_card.vue'
           projectName="CLOT"
           overview="Clot is a mobile e-commerce application designed to simplify online clothing shopping with a clean interface and fast performance"
           image="image"
+          alt="CLOT e-commerce app interface showcasing a clean design and fast performance for online clothing shopping"
+          link="https://github.com/Bewizi/clot"
         />
       </div>
     </App_container>
