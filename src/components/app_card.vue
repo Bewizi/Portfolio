@@ -5,6 +5,9 @@ defineProps<{
   projectName: string
   overview: string
   image: string
+  alt?: string
+  link?: string
+  projectLink?: string
 }>()
 </script>
 
@@ -17,7 +20,11 @@ defineProps<{
         <img
           class="w-full h-full object-cover mix-blend-overlay opacity-60"
           data-alt="Modern mobile shopping app interface showcase"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo948JEcnbs93Uj43jYWS5VXKfbtDN_bFAzdmuRGCN6C0YSgXv7gTndCwopINzcgtDeEEpSvrWfHu65ZaQ58K5aWOI8nY7dK8UkO9-mUnSbaUstGVUtpGul5dJ4MArjjwAGcVohyOL3wbX8dGvv28IIasHlIEYm0qNUeqKkoccaNxcj69CM3HyzZ8yPTfRc0fheE4jUTaa1T-hF5k38Aaeuka8TodWqocPxYzbBvbaE-ja35au9c4tbQb6rprd1TedMSPYv_8fbmE4"
+          :src="
+            image ||
+            'https://lh3.googleusercontent.com/aida-public/AB6AXuDo948JEcnbs93Uj43jYWS5VXKfbtDN_bFAzdmuRGCN6C0YSgXv7gTndCwopINzcgtDeEEpSvrWfHu65ZaQ58K5aWOI8nY7dK8UkO9-mUnSbaUstGVUtpGul5dJ4MArjjwAGcVohyOL3wbX8dGvv28IIasHlIEYm0qNUeqKkoccaNxcj69CM3HyzZ8yPTfRc0fheE4jUTaa1T-hF5k38Aaeuka8TodWqocPxYzbBvbaE-ja35au9c4tbQb6rprd1TedMSPYv_8fbmE4'
+          "
+          :alt="alt || 'Modern mobile shopping app interface showcase'"
         />
         <div class="absolute top-6 left-6 flex gap-2">
           <span
@@ -38,11 +45,12 @@ defineProps<{
           {{ overview }}
         </p>
         <button class="flex items-center gap-3 text-primary-accent font-bold group">
-          View Project
+          <a :href="projectLink" target="_blank" rel="noopener noreferrer"> View Project </a>
           <span
             class="material-symbols-outlined text-sm bg-primary/10 p-2 rounded-full group-hover:bg-primary group-hover:text-on-primary transition-colors"
-            >open_in_new</span
           >
+            <a :href="link" target="_blank" rel="noopener noreferrer"> open_in_new </a>
+          </span>
         </button>
       </div>
     </div>
