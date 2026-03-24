@@ -17,9 +17,9 @@ import App_container from '@/components/app_container.vue'
     </p>
 
     <p class="text-text-secondary mb-6">
-      I enjoy turning ideas into real products—whether it’s an e-commerce platform or a
-      location-based service. My goal is always to build apps that not only look good but also
-      perform smoothly and deliver real value to users.
+      I help turn ideas into real, usable products — from concept to a working mobile app whether
+      it’s an e-commerce platform or a location-based service. My goal is always to build apps that
+      not only look good but also perform smoothly and deliver real value to users.
     </p>
 
     <p class="text-text-secondary">
