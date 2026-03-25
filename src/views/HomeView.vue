@@ -12,12 +12,12 @@ import clotImage from '@/assets/clot.png'
   <main>
     <!-- hero section -->
     <App_container>
-      <h1 class="text-6xl font-bold mb-6 uppercase">
+      <h1 class="text-3xl/12 lg:text-6xl/normal font-bold mb-6 uppercase">
         <span class="text-text-primary"> I build mobile apps that help </span>
 
         <span class="text-primary-accent"> startups launch fast and scale confidently. </span>
       </h1>
-      <p class="text-text-secondary text-2xl mb-6">
+      <p class="text-text-secondary lg:text-2xl mb-6">
         I’m Toluwalase — a Flutter developer specializing in Firebase and Supabase. I build mobile
         apps that are reliable, easy to use, and ready for real users from day one.
       </p>
@@ -72,7 +72,7 @@ import clotImage from '@/assets/clot.png'
     <!-- my work section-->
     <App_container class="mt-20" id="work">
       <h2 class="text-4xl font-bold text-text-primary mb-6">My Work</h2>
-      <p class="text-text-secondary text-lg mb-4">
+      <p class="text-text-secondary lg:text-lg mb-4">
         I’ve had the opportunity to work on a variety of projects, from e-commerce platforms to
         location-based services. My focus is always on building apps that not only look good but
         also perform smoothly and deliver real value to users.
