@@ -17,7 +17,9 @@ import App_container from '@/components/app_container.vue'
       <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
         <a
           class="bg-primary-accent text-text-primary px-10 py-5 rounded-md font-bold text-lg hover:scale-105 transition-transform flex items-center gap-3"
-          href="mailto:hello@kinetic.dev"
+          href="mailto:toluwalase.bewaji@yahoo.com"
+          subject="Hello%20Toluwalase"
+          body="Hi%20Toluwalase%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20was%20impressed%20by%20your%20work.%20I%20would%20love%20to%20connect%20and%20discuss%20potential%20collaborations.%0A%0ABest%20regards%2C"
         >
           <span class="material-symbols-outlined">mail</span> Get in Touch
         </a>
