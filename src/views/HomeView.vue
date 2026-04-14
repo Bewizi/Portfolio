@@ -92,7 +92,7 @@ import clotImage from '@/assets/clot.png'
           :image="homeFinderImage"
           alt="HomeFinder app interface showcasing real-time home listings and smart filtering features"
           link="https://github.com/Bewizi/homefinder"
-          projectLink="https://drive.google.com/file/d/1jnWx1W8zfjTHLaEAMovL2NmQo50nDUIq/view?usp=drive_link"
+          projectLink="https://drive.google.com/drive/folders/1fWTLG_zq2kA_74Ucfa55PFU-8dKRHo2m?usp=drive_link"
         />
         <App_card
           frontend="Flutter"
